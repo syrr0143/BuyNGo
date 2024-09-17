@@ -26,7 +26,7 @@ export default function SetUpPage() {
     }
   }, [isOpen, onOpen]);
   return isClient ? (
-    <div className="p-4">
+    <div suppressHydrationWarning={true} className="p-4">
       <UserButton />{" "}
     </div>
   ) : null;
